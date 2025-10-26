@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Menu </h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+       <!-- <li><a href="contacto.html">Creacion factura</a></li> -->
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h2>Datos a completar </h2>
+        <form
+          id="contactForm"
+          action="php/interconexion.php"
+          method="POST"
+        >
+          <label for="fecha">Fecha:</label>
+          <input type="text" id="fecha" name="fecha" required />
+
+          <label for="numerofactura">Numero de factura:</label>
+          <input type="text" id="numerofactura" name="numerofactura" required />
+
+          <label for="nombre">Nombre completo :</label>
+          <input type="nombre" id="nombre" name="nombre" required />
+
+          <label for="celular">Numero celular:</label>
+          <input type="tel" id="celular" name="celular" required />
+
+          <label for="obervaciones">Observaciones :</label>
+          <textarea id="obervaciones" name="obervaciones" required></textarea>
+
+          <button type="submit" name="btn">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+
+    <script src="/javascript/script.js"></script>
+  </body>
+</html>
